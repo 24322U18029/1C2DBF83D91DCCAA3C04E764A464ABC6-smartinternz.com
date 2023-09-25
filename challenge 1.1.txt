@@ -1,0 +1,27 @@
+#1.1Implement a recursive function to calculate the factorial of a given number
+
+def fact_rec(n):
+  if n==1:
+   return 1
+
+  else:
+    return n*recur_factorial(n-1)  
+# take input from the user  
+num = int(input("Enter a number: 5"))  
+# check is the number is negative  
+if num < 1:  
+   print("Sorry, factorial does not exist for negative numbers")  
+elif num ==0:  
+   print("The factorial of 0 is 1")  
+else:  
+   print("The factorial of",num,"is",recur_factorial(num))  
+
+
+
+
+
+
+
+
+    
+    
